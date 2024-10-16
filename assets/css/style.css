@@ -1,0 +1,181 @@
+/****************************************
+Template Name: SOKALBEL-NEWS - Frontend Web Templete.
+Author: Rasel Ahmmed 
+Author Email: rahmmed.info@gmail.com
+Version: 2.0
+Description: Bangla Daily Newswapaer online version.
+***************************************
+
+CSS INDEX
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE 01
+**********************************/
+
+/*=============================
+    GLOBAL CSS START
+=============================*/
+/* @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "solaiman_lipi";
+  src: url("../webfonts/SolaimanLipi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--textColor);
+}
+
+p,
+span {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "solaiman_lipi", sans-serif;
+}
+
+img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(8, 5, 33, 0.1);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a6a6ac;
+}
+
+button {
+  border: none;
+}
+
+:root {
+  --bgColor: #fff;
+  --textColor: #000;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+/*=============================
+    GLOBAL CSS END
+=============================*/
+.navbar-custom .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: bold;
+}
+.header_top {
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-brand img {
+  max-height: 60px;
+}
+.top-quick-link a {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#midHeader {
+  box-shadow: 0 3px 5px #eee;
+}
+
+.main_nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Top Lead News */
+
+#top_lead_news {
+  padding: 20px 0px;
+}
+.lead_height {
+  height: 260px;
+  overflow: hidden;
+}
+
+.common_border_box,
+.news_container {
+  padding: 8px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+}
+.lead_img_wraper {
+  width: 415px;
+  overflow: hidden;
+}
+
+.lead_news_title {
+  font-size: 28px;
+  line-height: 36px;
+  color: #121212;
+  font-weight: 600;
+}
+
+.news_separator_horizontal_border {
+  border-top: 1px solid #e2e2e2;
+  margin: 15px 0;
+}
+
+.sub_news_img_container {
+  width: 150px;
+  overflow: hidden;
+  margin-right: 8px;
+}
