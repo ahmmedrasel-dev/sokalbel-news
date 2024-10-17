@@ -224,7 +224,8 @@ input:focus {
   border-bottom: 3px solid #c3282d;
 }
 
-.tab_bar_block_stories li span {
+.tab_bar_block_stories li span,
+.section_heading_title {
   font-size: 20px !important;
   line-height: 26px;
   color: #121212 !important;
@@ -271,4 +272,36 @@ input:focus {
   font-size: 40px;
   line-height: 1;
   opacity: 0.1;
+}
+
+.video-thumbnail {
+  height: 180px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-play-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.video-card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.text-muted {
+  font-size: 12px;
 }

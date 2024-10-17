@@ -50,6 +50,41 @@ $(function () {
     slidesToScroll: 1,
   });
 
+  $(".video-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button type="button" class="slick-prev btn btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button type="button" class="slick-next btn btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // For small screens (e.g., phones)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 576, // Extra small screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   //   //======select js=======
   //   $(".select_js").niceSelect();
 
