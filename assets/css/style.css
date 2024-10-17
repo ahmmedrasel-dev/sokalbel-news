@@ -54,13 +54,13 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: var(--textColor);
+  color: var(--headingTextColor);
 }
 
 p,
 span {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -103,7 +103,9 @@ button {
 
 :root {
   --bgColor: #fff;
-  --textColor: #000;
+  --summaryTextColor: #555;
+  --headingTextColor: #121212;
+  --paragraphTextColor: #000;
 }
 
 input:focus {
@@ -165,7 +167,7 @@ input:focus {
 .lead_news_title {
   font-size: 28px;
   line-height: 36px;
-  color: #121212;
+  color: var(--headingTextColor);
   font-weight: 600;
 }
 
@@ -178,4 +180,95 @@ input:focus {
   width: 150px;
   overflow: hidden;
   margin-right: 8px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  overflow: hidden;
+  color: var(--summaryTextColor);
+}
+
+.sub_news_title {
+  font-size: 18px !important;
+  line-height: 24px;
+  color: #2d3134;
+  font-weight: 600;
+  padding: 10px 0 20px 0;
+}
+
+.news_separator_vertical_border {
+  border-right: 1px solid #e2e2e2;
+}
+
+.tab_bar_block_stories ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.tab_bar_block_stories li {
+  display: table-cell;
+  width: 50%;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ebebeb;
+  bottom: -2px;
+  cursor: pointer;
+}
+
+.tab_bar_block_stories li.active {
+  border-bottom: 3px solid #c3282d;
+}
+
+.tab_bar_block_stories li span {
+  font-size: 20px !important;
+  line-height: 26px;
+  color: #121212 !important;
+  font-weight: 600;
+}
+
+.story-content {
+  display: none;
+}
+.story-content.active {
+  display: block;
+}
+
+.story-item video,
+.story-item img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 40px;
+  line-height: 1;
+  opacity: 0.1;
 }
